@@ -19,7 +19,7 @@ pip install -r requirements.txt
 export OPENAQ_API_KEY=cheia_api
 python src/01_download_openaq.py --start 2024-01-01 --end 2025-01-01
 earthengine authenticate - pentru autentificare
-python src/02_landsat_lst_gee.py --project <proiect-gee> --start 2024-01-01 --end 2025-01-01
+python src/02_landsat_lst_gee.py --project <IDUL RESPECTIV> --start 2024-01-01 --end 2025-01-01
 python src/03_build_dataset.py
 
 ```
