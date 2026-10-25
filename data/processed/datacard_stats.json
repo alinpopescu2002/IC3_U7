@@ -1,0 +1,52 @@
+{
+  "period": [
+    "2023-12-31",
+    "2025-01-01"
+  ],
+  "n_stations": 63,
+  "n_reference": 59,
+  "n_lowcost": 4,
+  "n_unknown_type": 0,
+  "n_sensors": 114,
+  "n_sensors_pm10": 92,
+  "n_sensors_pm25": 22,
+  "hourly_rows_clean": 293123,
+  "daily_rows_valid": 10102,
+  "station_days": 6642,
+  "missing_pct_median": 77.1,
+  "missing_pct_min": 43.1,
+  "missing_pct_max": 100.0,
+  "longest_gap_median": 155.0,
+  "sensors_ge_75pct": 0,
+  "pm10_mean": 24.1,
+  "pm10_p95": 55.6,
+  "pm25_mean": 19.1,
+  "pm25_p95": 52.2,
+  "lst_available": true,
+  "lst_coverage_pct": 98.0,
+  "fold_sizes": [
+    23,
+    11,
+    9,
+    10,
+    10
+  ],
+  "cleaning": {
+    "raw_rows": 311468,
+    "dropped_missing": 18345,
+    "dropped_negative": 0,
+    "dropped_implausible": 0,
+    "dropped_duplicates": 0,
+    "pm25_gt_pm10_hours": 974,
+    "pm25_gt_pm10_pct": 1.93,
+    "duplicate_locations_merged": 29,
+    "colocated_pairs": [
+      "RO0065A≈B-1",
+      "B-10≈B-10",
+      "B-9≈B-9",
+      "B-25≈B-25",
+      "Domnesti≈Domnesti"
+    ],
+    "clean_rows": 293123
+  }
+}

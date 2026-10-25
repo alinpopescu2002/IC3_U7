@@ -1,0 +1,64 @@
+station_id,station_name,latitude,longitude,is_monitor,owner,provider,license,type,block,fold
+9358,RO0067A,44.4405559994632,26.151122,True,Unknown Governmental Organization,EEA Romania,ODC-BY,referință,0,0
+9360,RO0069A,44.4116669994632,26.052244,True,Unknown Governmental Organization,EEA Romania,ODC-BY,referință,7,1
+9361,RO0071A,44.3488680301443,26.0336260914258,True,Unknown Governmental Organization,EEA Romania,ODC-BY,referință,1,3
+10779,RO0065A,44.4470701280555,26.0368600264486,True,Unknown Governmental Organization,EEA Romania,ODC-BY,referință,7,1
+10781,RO0066A,44.4110818288512,26.1847227222147,True,Unknown Governmental Organization,EEA Romania,ODC-BY,referință,0,0
+10784,RO0068A,44.395807371193,26.1483409532079,True,Unknown Governmental Organization,EEA Romania,ODC-BY,referință,0,0
+10789,RO0070A,44.4289183724066,26.1208525055138,True,Unknown Governmental Organization,EEA Romania,ODC-BY,referință,0,0
+10790,RO0072A,44.6166408790592,26.1166304236784,True,Unknown Governmental Organization,EEA Romania,ODC-BY,referință,3,3
+2163065,B-11,44.3706359998788,25.976136000028546,True,Unknown Governmental Organization,EEA,ODC-BY,referință,1,3
+2163066,B-10,44.46027499972366,25.987083000336547,True,Unknown Governmental Organization,EEA,ODC-BY,referință,2,4
+2163067,B-30,44.56000000018691,25.950000000130714,True,Unknown Governmental Organization,EEA,ODC-BY,referință,9,4
+2163068,B-8,44.649033000123296,26.144475000382045,True,Unknown Governmental Organization,EEA,ODC-BY,referință,3,3
+2163069,B-29,44.54999999984533,26.0700000001739,True,Unknown Governmental Organization,EEA,ODC-BY,referință,8,2
+2163070,B-26,44.50000000024475,26.13999999967507,True,Unknown Governmental Organization,EEA,ODC-BY,referință,5,2
+2163071,B-28,44.38999999989685,26.249999999789512,True,Unknown Governmental Organization,EEA,ODC-BY,referință,6,3
+2163072,B-3,44.444924999845064,26.12728900010153,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163073,B-13,44.45000000023424,26.12999999974633,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163074,B-15,44.47000000027231,26.13999999967507,True,Unknown Governmental Organization,EEA,ODC-BY,referință,5,2
+2163075,B-27,44.48999999983089,26.180000000288338,True,Unknown Governmental Organization,EEA,ODC-BY,referință,5,2
+2163076,B-9,44.49167500026332,26.030725000182034,True,Unknown Governmental Organization,EEA,ODC-BY,referință,2,4
+2163077,B-23,44.47000000027231,25.99999999977441,True,Unknown Governmental Organization,EEA,ODC-BY,referință,2,4
+2163078,B-1,44.44727499968577,26.036693999817814,True,Unknown Governmental Organization,EEA,ODC-BY,referință,7,1
+2163079,B-14,44.45000000023424,26.0700000001739,True,Unknown Governmental Organization,EEA,ODC-BY,referință,7,1
+2163080,B-6,44.435043999693924,26.098296999895624,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163081,B-24,44.410000000303135,26.109999999888853,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163082,B-12,44.42999999979392,26.090000000031374,True,Unknown Governmental Organization,EEA,ODC-BY,referință,7,1
+2163083,B-18,44.42999999979392,26.040000000387682,True,Unknown Governmental Organization,EEA,ODC-BY,referință,7,1
+2163084,B-5,44.41949400005138,26.033641999691156,True,Unknown Governmental Organization,EEA,ODC-BY,referință,7,1
+2163085,B-20,44.38999999989685,26.119999999817594,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163086,B-4,44.383908000254756,26.125016999949555,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163087,B-21,44.38999999989685,26.12999999974633,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163088,B-22,44.419999999965924,26.14999999960381,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163089,B-17,44.419999999965924,26.13999999967507,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163090,B-16,44.42999999979392,26.13999999967507,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163091,B-2,44.41796700027234,26.160786000253328,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2163092,B-7,44.34922199975112,26.030828000114195,True,Unknown Governmental Organization,EEA,ODC-BY,referință,1,3
+2163093,B-25,44.30000000004447,26.119999999817594,True,Unknown Governmental Organization,EEA,ODC-BY,referință,4,4
+2995838,B-10,44.46038820028955,25.98737529955358,True,Unknown Governmental Organization,EEA,ODC-BY,referință,2,4
+2995839,B-11,44.36974330023394,25.97479820016135,True,Unknown Governmental Organization,EEA,ODC-BY,referință,1,3
+2995840,B-12,44.42548369981165,26.09100340023743,True,Unknown Governmental Organization,EEA,ODC-BY,referință,7,1
+2995841,B-13,44.450759899946064,26.13029859974677,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2995842,B-14,44.44618229971936,26.066266999806768,True,Unknown Governmental Organization,EEA,ODC-BY,referință,7,1
+2995843,B-15,44.468055699816084,26.140905399971835,True,Unknown Governmental Organization,EEA,ODC-BY,referință,5,2
+2995844,B-16,44.43214419998374,26.14021490004723,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2995845,B-17,44.41974260010748,26.136154199654346,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2995846,B-18,44.4341086998202,26.04233169987849,True,Unknown Governmental Organization,EEA,ODC-BY,referință,7,1
+2995847,B-20,44.39267729978861,26.12041659981881,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2995848,B-21,44.38613890030204,26.130407300387724,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2995849,B-22,44.41850660022456,26.149198500249433,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2995850,B-23,44.47031400018909,26.002456699837005,True,Unknown Governmental Organization,EEA,ODC-BY,referință,2,4
+2995851,B-24,44.40710069984446,26.113142000427192,True,Unknown Governmental Organization,EEA,ODC-BY,referință,0,0
+2995852,B-25,44.30010990029692,26.12012480006507,True,Unknown Governmental Organization,EEA,ODC-BY,referință,4,4
+2995853,B-26,44.49925609981335,26.135429400255557,True,Unknown Governmental Organization,EEA,ODC-BY,referință,5,2
+2995854,B-27,44.48823930007044,26.184184999668773,True,Unknown Governmental Organization,EEA,ODC-BY,referință,5,2
+2995855,B-28,44.38578410022991,26.24712560018779,True,Unknown Governmental Organization,EEA,ODC-BY,referință,6,3
+2995856,B-29,44.550273900238935,26.07054140042259,True,Unknown Governmental Organization,EEA,ODC-BY,referință,8,2
+2995857,B-30,44.56106190031911,25.947101600239545,True,Unknown Governmental Organization,EEA,ODC-BY,referință,9,4
+2995858,B-9,44.49180980008289,26.03092579969918,True,Unknown Governmental Organization,EEA,ODC-BY,referință,2,4
+3056516,Domnesti,44.402535,25.94671,False,Unknown Person,AirGradient,CC BY 4.0,low-cost,1,3
+3057997,Domnesti,44.40255,25.94668,False,Unknown Person,AirGradient,CC BY 4.0,low-cost,1,3
+3269331,Voluntari Mihai Viteazul,44.4892,26.1758059,False,Catalin,AirGradient,CC BY 4.0,low-cost,5,2
+3287093,B-19,44.42267609974606,26.07074930022374,True,Unknown Governmental Organization,EEA,ODC-BY,referință,7,1
+3325000,Bucharest,44.39635887573729,26.098526765928177,False,Unknown Person,AirGradient,CC BY 4.0,low-cost,0,0
