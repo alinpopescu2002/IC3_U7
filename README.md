@@ -16,7 +16,7 @@ ca să alegem locul următorului senzor?
 ```bash
 pip install -r requirements.txt
 # Windows PowerShell:  $env:OPENAQ_API_KEY="cheia_ta"
-export OPENAQ_API_KEY=cheia_ta
+export OPENAQ_API_KEY=cheia_api
 python src/01_download_openaq.py --start 2024-01-01 --end 2025-01-01
 earthengine authenticate
 python src/02_landsat_lst_gee.py --project <proiect-gee> --start 2024-01-01 --end 2025-01-01
