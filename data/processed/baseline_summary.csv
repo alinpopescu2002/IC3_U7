@@ -1,0 +1,17 @@
+target,protocol,method,rmse,rmse_sd,mae,r2,r2_sd
+pm10,aleator,Climatologie,14.84,0.61,10.54,0.14,0.01
+pm10,aleator,IDW,11.01,0.27,7.7,0.53,0.03
+pm10,aleator,Medie oraș (zi),10.78,0.35,7.34,0.55,0.03
+pm10,aleator,RF (A: coord+LST+vecini),7.77,0.34,4.68,0.76,0.01
+pm10,spațial,Climatologie,15.3,2.37,10.95,0.08,0.1
+pm10,spațial,IDW,11.29,2.27,7.58,0.5,0.11
+pm10,spațial,Medie oraș (zi),11.29,2.09,7.74,0.5,0.07
+pm10,spațial,RF (A: coord+LST+vecini),11.88,2.57,8.17,0.45,0.1
+pm25,aleator,Climatologie,15.22,3.04,9.57,0.18,0.05
+pm25,aleator,IDW,14.56,2.48,8.76,0.24,0.13
+pm25,aleator,Medie oraș (zi),14.64,2.4,9.06,0.24,0.1
+pm25,aleator,RF (A: coord+LST+vecini),9.32,2.97,5.07,0.69,0.09
+pm25,spațial,Climatologie,23.04,15.45,16.52,-0.43,0.53
+pm25,spațial,IDW,19.03,14.06,14.92,0.06,0.51
+pm25,spațial,Medie oraș (zi),18.67,12.8,14.55,0.03,0.44
+pm25,spațial,RF (A: coord+LST+vecini),23.09,15.63,19.0,-0.45,0.91

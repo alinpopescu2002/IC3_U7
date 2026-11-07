@@ -1,0 +1,20 @@
+{
+  "pm25": {
+    "n_stations": 15,
+    "n_station_days": 1386,
+    "period": [
+      "2024-01-01",
+      "2024-12-31"
+    ],
+    "alphaearth": false
+  },
+  "pm10": {
+    "n_stations": 62,
+    "n_station_days": 6641,
+    "period": [
+      "2024-01-01",
+      "2024-12-31"
+    ],
+    "alphaearth": false
+  }
+}
