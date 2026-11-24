@@ -55,6 +55,34 @@ python src/06_baselines.py            # ambele ținte; sau --target pm10 / pm25
 
 Slide-uri: `CP2_U7.pptx`
 
+## Stratul 3: Învățare (CP3)
+
+**Metoda:** Gaussian Process (kriging ordinar) pe log(PM+1), cu hiperparametri comuni pentru toate zilele:
+`k = c + σ²·Matérn3/2(d/ℓ) + τ²`. Aici `c` e nivelul zilei (integrat analitic), `σ², ℓ` dau diferențele locale,
+iar `τ²` e zgomotul. Varianta a doua adaugă LST ca dimensiune cu lungimea ei de corelație.
+Hiperparametrii se învață din verosimilitatea marginală, doar pe stațiile de antrenare.
+GP dă și o incertitudine în fiecare punct, de care avem nevoie la amplasarea senzorului (CP4–5).
+
+| Pas | Script | Ieșire |
+|---|---|---|
+| 6. GP vs. baseline-uri, 5 fold-uri spațiale × 3 seed-uri (42, 7, 123), IC 95% bootstrap pe stații | `src/07_gp_vs_baselines.py` | `results_v1_U7.csv`, `data/processed/cp3_*.csv`, `cp3_predictions.csv.gz`, `figures/fig_cp3_rmse_ci.png` |
+
+- Seed-ul schimbă împărțirea stațiilor în fold-uri (KMeans, ca la CP1; seed 42 = fold-urile CP1) și seed-ul RF.
+- IC: bootstrap pe stații (2000 de eșantioane), aceleași pentru toate metodele, deci Δ față de IDW e pereche.
+- RMSE e comasat pe toate stație-zilele testate, nu mediat pe fold-uri, de aceea diferă puțin de CP2.
+
+**Rezultat (negativ, raportat ca atare):** la PM10, GP are RMSE 11,07 µg/m³ față de 11,02 la IDW
+(Δ +0,05, IC 95% [−0,12; +0,24]), deci nu e mai bun. Nicio metodă nu bate semnificativ IDW sau media orașului.
+Câștigul GP e incertitudinea calibrată: 88% din valori cad în intervalul de 90% (PM2.5: 91%).
+GP învață că doar ~12% din variație e spațială structurată (ℓ ≈ 5 km), iar restul e nivelul zilei plus zgomot.
+LST nu ajută. PM2.5 are 15 stații și IC foarte late.
+
+```bash
+python src/07_gp_vs_baselines.py        # ~2 min; sau --target pm10 / pm25
+```
+
+Slide-uri: `CP3_U7.pptx`
+
 Documente: [`datacard_U7.md`](datacard_U7.md) · [`docs/SOA_U7.md`](docs/SOA_U7.md)
 
 Cheia API **nu** se pune în cod. Se citește din variabila de mediu `OPENAQ_API_KEY`.
