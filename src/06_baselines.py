@@ -104,6 +104,14 @@ def metrics(y, p):
 
 
 def run_split(Yv, obs, L, xy, days, emb, train_mask, test_mask):
+    preds = predict_split(Yv, L, xy, days, emb, train_mask, test_mask)
+    yte = Yv[test_mask]
+    return {k: metrics(yte, v[test_mask]) for k, v in preds.items() if not k.startswith("_")}
+
+
+def predict_split(Yv, L, xy, days, emb, train_mask, test_mask, seed=None):
+    """Intoarce {metoda: matrice zi x statie cu predictii} (completata cel putin pe test_mask)."""
+    seed = SEED if seed is None else seed
     idw, city, near, nk = neighbour_feats(Yv, train_mask, xy)
     cl = clim(Yv, train_mask, days)
     S = Yv.shape[1]
@@ -114,7 +122,7 @@ def run_split(Yv, obs, L, xy, days, emb, train_mask, test_mask):
               idw, city, near, nk, cl]
     feats_A = np.stack([X0[..., 0], X0[..., 1], L] + common, -1)
     preds = {"Climatologie": cl, "Medie oraș (zi)": city, "IDW": idw}
-    ytr, yte = Yv[train_mask], Yv[test_mask]
+    ytr = Yv[train_mask]
 
     def fit(F, name):
         Xtr, Xte = F[train_mask], F[test_mask]
@@ -124,7 +132,7 @@ def run_split(Yv, obs, L, xy, days, emb, train_mask, test_mask):
         Xtr = np.where(np.isnan(Xtr), mu, Xtr)
         Xte = np.where(np.isnan(Xte), mu, Xte)
         rf = RandomForestRegressor(n_estimators=300, min_samples_leaf=5, max_features=0.5,
-                                   n_jobs=-1, random_state=SEED).fit(Xtr, ytr)
+                                   n_jobs=-1, random_state=seed).fit(Xtr, ytr)
         p = np.full(Yv.shape, np.nan)
         p[test_mask] = rf.predict(Xte)
         preds[name] = p
@@ -134,7 +142,8 @@ def run_split(Yv, obs, L, xy, days, emb, train_mask, test_mask):
         E = np.repeat(emb[None], len(days), 0)
         feats_B = np.concatenate([E, np.stack(common, -1)], -1)
         fit(feats_B, "RF (B: AlphaEarth+vecini)")
-    return {k: metrics(yte, v[test_mask]) for k, v in preds.items()}
+    preds["_near_km"] = near                    # distanta la cea mai apropiata statie de antrenare
+    return preds
 
 
 def evaluate(target):
